@@ -90,8 +90,8 @@ img {
 }
 
 .btns {
-    background-color: #DEDEDE;
-    color: #C7B0A9;
+    background-color: #CFC9c8;
+    color: #DEDEDE;
 }
 
 /*main-content*/
@@ -132,7 +132,7 @@ img {
 }
 
 .portfolioPage h1 {
-    color: red;
+/*     color: red; */
     text-align: center;
 }
 /*Social Media*/
@@ -232,9 +232,9 @@ img {
         text-align: center;
     }
     
-    .portfolioPage h1 {
+/*     .portfolioPage h1 {
         color: blue;
-    }
+    } */
 
 }
 
@@ -255,6 +255,7 @@ img {
     .logo {
         float: left;
         width: 20%;
+        margin: 1rem 0 0 1rem;
     }
     .menu {
         clear: right;
@@ -293,9 +294,9 @@ img {
         width: 45%;
     }
     
-    .portfolioPage h1 {
+/*     .portfolioPage h1 {
         color: yellow;
-    }
+    } */
 
     
     footer {
