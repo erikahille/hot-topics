@@ -1,0 +1,346 @@
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: #444;
+    font-size: 1.25rem;
+}
+
+header {
+    align-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Droid Serif", sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.masthead-bg {
+    padding: 5% 0;
+    background-color: #80F5EE;
+    text-align: center;
+}
+
+#tag-line {
+    color: #72DBD5;
+    transition: all 500ms ease-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box {
+    max-width: 60rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin: 0.5rem 0 2rem 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*navigation*/
+
+.nav-bg li {
+    display: inline;
+}
+
+.nav-bg li a {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #DDD;
+    margin: 0 0 0.5rem 0;
+}
+
+.btns {
+    background-color: #DEDEDE;
+    color: #C7B0A9;
+}
+
+/*main-content*/
+
+.main-content-bg .box p {
+    text-align: left;
+}
+
+/*footer*/
+
+.footer-bg .box {
+    border-top: 1px solid #DDD;
+}
+
+.footer-bg li {
+    display: inline;
+}
+
+.footer-bg li a {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid #DDD;
+    margin: 0 0.5rem 0 0;
+}
+
+.footer-bg li:last-child a {
+    margin: 0;
+}
+
+/*portfolio page*/
+.portfolioPage {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.imgbox {
+    margin: 1rem;
+}
+
+.portfolioPage h1 {
+    color: red;
+    text-align: center;
+}
+/*Social Media*/
+
+.social a {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #d5d5d5;
+}
+
+.fa-envira,
+.fa-earlybirds,
+.fa-pagelines {
+    color: #d5d5d5;
+}
+
+.fa-envira:hover,
+.fa-earlybirds:hover,
+.fa-pagelines:hover {
+    color: #004d45;
+}
+
+.social {
+    padding-bottom: 30px;
+}
+
+/* MOBILE */
+
+@media screen and (min-width: 35rem) {
+    body {
+        font-size: .75rem;
+    }
+
+    .box {
+        margin: 2rem;
+    }
+
+    /*adjusting nav*/
+    .nav-bg ul {
+        margin: 0 auto;
+    }
+    .nav-bg li a {
+/*        width: calc(33.33% - 1rem + 0.33rem);*/
+        width: 30%;
+        float: left;
+        margin-left: 16%;
+    }
+
+    .nav-bg li:last-child a {
+        margin-left: 6%;
+        margin-right: 16%;
+    }
+    /*adjusting image*/
+
+    figure {
+        width: 45%;
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+
+    figcaption {
+        text-align: left;
+    }
+    
+   /* portfolio page*/
+    .portfoliobox {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .imgbox {
+        width: 43%;
+        text-align: center;
+    }
+    
+    .portfolioPage h1 {
+        color: blue;
+    }
+
+}
+
+
+
+/*TABLET*/
+
+@media screen and (min-width: 48rem) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .box {
+        margin: 2rem;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+    }
+    .menu {
+        clear: right;
+        float: right;
+        width: 70%;
+    }
+    
+    .masthead-bg {
+        clear: both;
+    }
+    /*adjusting nav*/
+    .nav-bg li a {
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+
+    .nav-bg li:last-child a {
+        margin: 0;
+    }
+/*portfolio images*/
+
+    /*adjusting image*/
+
+    figure {
+        width: 35%;
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+
+    figcaption {
+        text-align: left;
+    }
+    
+    .imgbox {
+        width: 45%;
+    }
+    
+    .portfolioPage h1 {
+        color: yellow;
+    }
+
+    
+    footer {
+        clear: both;
+    }
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 80rem) {
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 10px;
+
+    }
+    .box {
+        font-size: 1.618rem;
+        margin: 2rem auto;
+    }
+
+    .masthead-bg {
+        padding: 1% 0;
+    }
+
+    #tag-line {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+
+    figure {
+        width: 30%;
+        margin: 0 2rem 0 0;
+    }
+    
+    .imgbox {
+        width: 30%;
+    }
+
+    .footer-bg .box {
+        text-align: left;
+    }
+}
